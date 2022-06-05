@@ -4,7 +4,7 @@ let todoItems = document.querySelectorAll(".todolist__item");
 
 let saveButton = document.querySelector(".todolist__save");
 let clearButton = document.querySelector(".todolist__clear");
-deleteTodo();
+
 function deleteTodo() {
   let deleteIcons = document.querySelectorAll(".iconify");
   for (let i = 0; i < deleteIcons.length; i++) {
@@ -35,3 +35,4 @@ taskArea.addEventListener("click", function (event) {
     event.target.classList.toggle("checked");
   }
 });
+deleteTodo();
