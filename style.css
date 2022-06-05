@@ -66,11 +66,9 @@ body{
 }
 
 .iconify{
+    font-size: 20px;
     opacity: .5;
     cursor: pointer;
-    width: 10px;
-    height: 10px;
-    background-image: url(./delete-img.png);
     transition: .3s;
 }
 
