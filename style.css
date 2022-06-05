@@ -36,15 +36,14 @@ body{
     border: 2px solid gray;
     font-size: 20px;
 }
-.todolist__items{
-
-}
 .todolist__item {
     height: 60px;
-   
+   justify-content: space-between;
     display: flex;
     align-items: center;
     padding-left: 10px;
+    padding-right: 20px;
+    cursor: pointer;
 }
 .buttons {
     width: 100%;
@@ -60,11 +59,23 @@ body{
     background-color: #6AAED9;
     color: white;
     border: none;
+    cursor: pointer;
 }
 .todolist__button + .todolist__button{
     margin-left: 10px;
 }
-.todolist__save {
+
+.iconify{
+    font-size: 20px;
+    opacity: .5;
+    cursor: pointer;
+    transition: .3s;
 }
-.todolist__clear {
+
+.iconify:hover{
+    opacity: 1;
+}
+.checked{
+    opacity: .8;
+    text-decoration: line-through;
 }
