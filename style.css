@@ -36,6 +36,11 @@ body{
     border: 2px solid gray;
     font-size: 20px;
 }
+
+.todolist__item:nth-child(2n){
+    background-color: #eeffdd;
+    
+}
 .todolist__item {
     height: 60px;
    justify-content: space-between;
@@ -44,6 +49,10 @@ body{
     padding-left: 10px;
     padding-right: 20px;
     cursor: pointer;
+}
+
+.todolist__item:hover .iconify{
+    opacity: .5;
 }
 .buttons {
     width: 100%;
@@ -67,9 +76,11 @@ body{
 
 .iconify{
     font-size: 20px;
-    opacity: .5;
+    opacity: 0;
     cursor: pointer;
-    transition: .3s;
+    transition: .2s;
+    width: 20px;
+    height: 20px;
 }
 
 .iconify:hover{
