@@ -15,18 +15,13 @@ function deleteTodo() {
 }
 
 function saveTodo() {
-  console.log(taskArea.innerHTML);
   localStorage.setItem("todoList", taskArea.innerHTML);
-  
 }
 
 function loadTodo() {
-  if(localStorage.getItem('todoList')){
-    console.log('//////////////////');
-  console.log(localStorage.getItem("todoList"));
-  taskArea.innerHTML = localStorage.getItem("todoList");
+  if (localStorage.getItem("todoList")) {
+    taskArea.innerHTML = localStorage.getItem("todoList");
   }
-  
 }
 
 inputField.addEventListener("keypress", function (keyPressed) {
@@ -49,7 +44,7 @@ taskArea.addEventListener("click", function (event) {
 });
 
 clearButton.addEventListener("click", function () {
-  localStorage.removeItem('todoList');
+  localStorage.removeItem("todoList");
   todoItems = document.querySelectorAll(".todolist__item");
   for (let item of todoItems) {
     item.remove();
